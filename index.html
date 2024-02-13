@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Lag en stoppeklokke.
+
+Begynn med å lage én knapp som setter i gang tiden - tiden lagres i en variabel, og vises fram i nettleseren.
+
+Lag så en knapp for å ta "rundetider" - altså at du lagrer og viser tiden i dét du trykker på pauseknappen, 
+samtidig som tidtakeren stiller seg tilbake på 0 og begynner på nytt.
+
+Lag en knapp for å blanke ut og stoppe klokka og timeren.
+
+Ting som kan være lurt å sjekke ut: SetTimeout() og SetInterval()
+
+Husk at dette er en oppgave hvor du skal trene på å bruke variabler! -->
+    <br />
+    <br />
+    <div id="klokken">0</div>
+    <br />
+    <button id="starter" onclick="startTimer()">Starter</button>
+    <button id="rundeTid" onclick="setRundeTid()">Rundetid</button>
+    <button id="reStart" onclick="timerRestart()">Restart</button>
+    <br />
+
+    <div id="lagretRundeTid">
+        <div id="Tider"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
